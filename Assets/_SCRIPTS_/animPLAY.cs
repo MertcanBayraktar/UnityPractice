@@ -44,6 +44,7 @@ public class animPLAY : MonoBehaviour
 		anim.SetFloat("velx", velocity.x);
 		anim.SetFloat("vely", velocity.y);
 
+		GetComponent<LookAt>().lookAtTargetPosition = agent.steeringTarget + transform.forward;
 	}
 
 
